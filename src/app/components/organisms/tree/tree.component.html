@@ -1,0 +1,5 @@
+<div [ngClass]="{'tree': true}">
+  <ng-container *ngFor=" let item of data.items">
+    <app-tree-item [data]="item"></app-tree-item>
+  </ng-container>
+</div>

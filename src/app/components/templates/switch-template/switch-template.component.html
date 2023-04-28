@@ -1,0 +1,6 @@
+<app-header [data]="header"></app-header>
+  <section [ngSwitch]="content.template">
+    <app-two-column *ngSwitchCase="1" [content]="content"></app-two-column>
+    <app-one-column *ngSwitchDefault [content]="content"></app-one-column>
+  </section>
+<app-footer [data]="footer"></app-footer>

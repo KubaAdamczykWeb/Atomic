@@ -1,0 +1,7 @@
+<header>
+  <nav>
+    <ng-container *ngFor="let link of data.nav">
+      <app-router-link [text]="link.title" [path]="link.path"></app-router-link>
+    </ng-container>
+  </nav>
+</header>

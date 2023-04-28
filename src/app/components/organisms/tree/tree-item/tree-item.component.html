@@ -1,0 +1,6 @@
+<div [ngClass]="{'tree-item': true}">
+  <app-mutable-organism [content]="data.mutable"></app-mutable-organism>
+  <ng-container *ngIf="data.tree ">
+    <app-tree [data]="data.tree"></app-tree>
+  </ng-container>
+</div>

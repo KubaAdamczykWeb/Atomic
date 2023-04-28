@@ -1,0 +1,14 @@
+.tree {
+  position: relative;
+  padding-left: 10px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 5px;
+    left: 9px;
+    width: 1px;
+    background: green;
+  }
+}

@@ -1,0 +1,14 @@
+tree-item {
+  position: relative;
+  padding-left: 15px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    background: green;
+  }
+}

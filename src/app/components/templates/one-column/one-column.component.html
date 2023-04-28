@@ -1,0 +1,4 @@
+<app-title [data]="content.title"></app-title>
+<ng-container *ngFor="let mutable of content.columnA?.mutables">
+  <app-mutable-organism [content]="mutable"></app-mutable-organism>
+</ng-container>

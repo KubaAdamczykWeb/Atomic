@@ -1,0 +1,10 @@
+<ng-container [ngSwitch]="content.type">
+  <app-article *ngSwitchCase="0" [data]="content.data"></app-article>
+  <app-article-with-photo *ngSwitchCase="1" [data]="content.data"></app-article-with-photo>
+  <app-footer *ngSwitchCase="2" [data]="content.data"></app-footer>
+  <app-header *ngSwitchCase="3" [data]="content.data"></app-header>
+  <app-title *ngSwitchCase="4" [data]="content.data"></app-title>
+  <app-tree *ngSwitchCase="5" [data]="content.data"></app-tree>
+  <app-label *ngSwitchCase="6" [data]="content.data"></app-label>
+  <app-label-with-icon *ngSwitchCase="7" [data]="content.data"></app-label-with-icon>
+</ng-container>
